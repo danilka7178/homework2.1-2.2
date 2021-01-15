@@ -21,7 +21,7 @@ code {
 
   background-color: #585858;
   border-radius: 15px;
-  padding: 15px;
+  padding: 30px;
 }
 
 .filter {
@@ -34,13 +34,13 @@ code {
     width: 200px;
     padding: 0px 30px;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     border: 1px solid white;
     border-radius: 2px;
     background-color: #585858;
     outline: none;
     &:focus {
-      border: 1px solid #fec952;
+      outline: 1px solid #fec952;
     }
   }
 }
@@ -55,7 +55,7 @@ code {
   }
 }
 
-.item {
+.card {
   display: flex;
   align-items: center;
   flex-direction: column;
