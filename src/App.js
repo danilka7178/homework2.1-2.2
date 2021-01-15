@@ -7,7 +7,14 @@ function App() {
   return (
     <div className="app">
       <Filter />
-      <Card data={data} />
+      <div className="cards">
+        {data.map((arg) => (
+          <Card key={`${arg.title.toString()}_${arg.index}`}
+            title={arg.title}
+            image={arg.image}
+            description={arg.description} />
+        ))}
+      </div>
     </div>
   );
 }
