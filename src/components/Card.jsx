@@ -1,7 +1,7 @@
-function Card(data) {
+function Card(props) {
    return (
       <div className="cards">
-         {data.data.map((arg) => (
+         {props.data.map((arg) => (
             <div className="item">
                <h2 className="item__title">{arg.title}</h2>
                <img className="item__image" src={arg.image} alt="food" />
